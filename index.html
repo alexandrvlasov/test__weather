@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Погода</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__cloudy" src="img/cloudy.svg" width="244.8" height="176.38" alt="Облака">
+            <div class="header__info">
+                <h1 class="title">Погода</h1>
+                <div class="input__group">
+                    <label class="latitude">Широта</label>
+                    <form class="form" id="form1">
+                        <input id="inputLatitude" type="text" class="search__input" placeholder="...">
+                    </form>
+                </div>
+                <div class="input__group">
+                    <label class="longitude">Долгота</label>
+                    <form class="form" id="form2">
+                        <input id="inputLongitude" type="text" class="search__input" placeholder="...">
+                    </form>
+                </div>
+                <button class="search__button">Показать погоду</button>
+            </div>
+            <img class="header__cloudy__sun" src="img/cloudy__sun.svg" width="227.52" height="164.53" alt="Облака">
+        </div>
+    </header>
+    <script src="./dictionary.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=c8314181-fa6c-41e3-8a47-e76f1af0486a" type="text/javascript"></script>
+</body>
+</html>
