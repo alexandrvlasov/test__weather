@@ -66,6 +66,15 @@ function displayWeatherData(data) {
     header.insertAdjacentHTML('afterend', html);
 
     initMap(data.location.lat, data.location.lon);
+    
+    const deleteButton = header.nextElementSibling.querySelector('.del__button');
+    
+    deleteButton.onclick = function() {
+        const card = deleteButton.closest('.card');
+        if (card) {
+            card.remove();
+        }
+    };
 }
 
 function createWeatherCard(data, info, imgPath) {
@@ -80,6 +89,7 @@ function createWeatherCard(data, info, imgPath) {
                     <img class="card__weather" src="${imgPath}" width="318" height="318" alt="Погода">
                 </div>
                 <div id="map"></div>
+                <button class="del__button">Удалить карточку</button>
             </div>`;
 }
 
