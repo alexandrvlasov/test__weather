@@ -105,4 +105,16 @@ button {
 #map {
     width: 100%;
     height: 500px;
+    padding: 0px 50px;
+}
+
+.del__button {
+    color: #ffffff;
+    background-color: #0080FF;
+    border: none;
+    border-radius: 7px;
+    width: 660px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
